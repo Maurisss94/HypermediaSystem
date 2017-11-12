@@ -4,7 +4,7 @@ subtitle: by M.Balestra and J.Garvin
 email: josegarvinvictoria@gmail.com
 description: The most relevant information on the different <br /> operating systems that exist today has been compiled.
 baseurl: "/HypermediaSystem" # the subpath of your site, e.g. /blog
-url: "http://maurisss94.github.io" # the base hostname & protocol for your site
+url: "https://maurisss94.github.io" # the base hostname & protocol for your site
 author: J. Garvin & M. Balestra
 
 # homepage tiles
