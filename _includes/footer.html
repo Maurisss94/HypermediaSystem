@@ -1,0 +1,74 @@
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="menu-footer">
+				{% for p in site.pages %}
+					{% if p.image %}
+					<li class="title-menu-footer">
+						<a href="{{p.url | prepend: site.baseurl}}">{{p.title}}</a>
+						{%if p.title == 'Linux' %}
+						<ul class="">
+							{% assign linux = site.linux | sort: "priority" %}
+							{% for l in linux %}
+							<li class>
+								<a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						{%if p.title == 'Mac' %}
+						<ul class="">
+							{% assign mac = site.mac | sort: "priority" %}
+							{% for l in mac %}
+							<li class>
+								<a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+						{%if p.title == 'Windows' %}
+						<ul class="">
+							{% assign windows = site.windows | sort: "priority" %}
+							{% for l in windows %}
+							<li class>
+								<a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+					</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+			<ul class="copyright">
+				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
+				<li>Powered by Jekyll</li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/jquery.scrolly.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/jquery.scrollex.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/skel.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "/assets/js/ie/respond.min.js" | prepend: site.baseurl }}"></script><![endif]-->
+	<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/js/slick/slick.js" | prepend: site.baseurl }}"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.slide-images').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			arrows: false,
+		  });
+		});
+	  </script>
+	

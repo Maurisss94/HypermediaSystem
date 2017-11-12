@@ -1,0 +1,73 @@
+---
+layout: page
+title: Windows
+permalink: /windows/
+description: Microsoft
+image: assets/images/pic01.jpg
+nav-menu: true
+images: [ "assets/images/windows-10.jpg", "assets/images/microsoft.jpg", "assets/images/bill-gates.jpg", "assets/images/products-microsoft.png"  ]
+---
+{% contentfor content_history %}
+<div>
+        <h3>History</h3>
+        <ul>
+            <li>1975 – 1985 The founding of Microsoft</li>
+            <li>1985 – 1994 Windows and Office</li>
+            <li>1995 – 2007 Foray into the web, Winodws 95, Windows Xp, and Xbox</li>
+            <li>2007 – 2011  Microsoft Azure, Windows Vista, Windows 7, and Microsoft Stores</li>
+            <li>2011 – 2014 Windows 8, Xbox One, Outlook.com, and Surface devices</li>
+            <li>2014 – present Windows 10, Windows 10 Mobile, Microsoft Edge and HoloLens</li>
+        </ul>
+    </div>
+
+<br>
+<br>
+{% endcontentfor content_history %}
+
+
+{% contentfor content_overview %}
+
+
+<div class="slide-images">
+    {% for i in page.images %}
+    <img src="{{site.url}}/{{i}}" />
+    {% endfor %}
+</div>
+
+<div>
+        <h3>What is that?</h3>
+        <p>Microsoft is a leading global vendor of computer software; hardware for computer, mobile and gaming systems; and
+            cloud services. Microsoft's corporate headquarters is located in Redmond, Wash., and it has offices in more than 60 countries.</p>
+        <p>Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite,
+            and the Internet Explorer and Edge web browsers.</p>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+{% endcontentfor content_overview %}
+
+
+{% contentfor content_links %}
+<div>
+    <h3>More info:</h3>
+    <ul class="alt">
+        <li>
+            <a class="button special fit" href="https://www.microsoft.com" target="_blank">Webpage</a>
+        </li>
+        <li>
+            <a class="button special fit" href="https://www.microsoft.com/en-us/store/b/home" target="_blank">Store</a>
+        </li>
+        <li>
+            <a class="button special fit" href="https://www.microsoft.com/en-us/store/d/windows-10-home/d76qx4bznwk4/1NT3" target="_blank">Buy Windows 10</a>
+        </li>
+        <li>
+            <a class="button special fit" href="https://www.microsoft.com/en-us/about/default.aspx" target="_blank"> About Microsoft</a>
+        </li>
+    </ul>
+</div>
+{% endcontentfor content_links %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+
+
+<!-- Main -->
+<div id="main" class="alt">
+
+    <div class="subpage">
+
+        <div class="inner">
+
+            <div class="breadcrumb montserrat">
+                <p><a href="{{site.url | prepend: site.baseurl}}">Home </a> / <a href="{{site.url}}{{page.category-link}}"><span class="white"> {{page.category}}</span> </a>  / <span class="white actual-breadcrumb">{{page.title}}</span> </p>
+            </div>
+
+            <header class="major">
+                <h1>{{ page.title }}</h1>
+            </header>
+
+            <div class="content">
+                {% contentblock section1 %}
+                {% if page.image %}
+                <span class="image main"><img src="{{ page.image | prepend: site.baseurl}}" alt="" /></span>
+                {% endif %}
+
+                {% contentblock section2 %}
+                {% if page.video %}
+                <div class="video">
+                    <iframe width="768" height="480" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                {% endif %}
+                {% contentblock section3 %}
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

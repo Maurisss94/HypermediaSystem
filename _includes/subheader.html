@@ -1,0 +1,36 @@
+<div id="subheader">
+
+    {%if page.title == 'Linux' %}
+    <ul class="menu-subheader">
+    {% assign linux = site.linux | sort: "priority" %}
+    {% for l in linux %}
+        <li class="element-subpage">
+            <a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+        </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+    {%if page.title == 'Mac' %}
+    <ul class="menu-subheader">
+        {% assign mac = site.mac | sort: "priority" %}
+        {% for l in mac %}
+        <li class="element-subpage">
+            <a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {%if page.title == 'Windows' %}
+    <ul class="menu-subheader">
+        {% assign windows = site.windows | sort: "priority" %}
+        {% for l in windows %}
+        <li class="element-subpage">
+            <a href="{{l.url | prepend: site.baseurl}}">{{l.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</div>

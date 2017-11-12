@@ -1,0 +1,42 @@
+# site settings
+title: Operating Systems
+subtitle: by M.Balestra and J.Garvin
+email: josegarvinvictoria@gmail.com
+description: The most relevant information on the different <br /> operating systems that exist today has been compiled.
+baseurl: "/HypermediaSystem" # the subpath of your site, e.g. /blog
+url: "http://maurisss94.github.io" # the base hostname & protocol for your site
+author: J. Garvin & M. Balestra
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+include: ["_pages"]
+collections:
+  mac:
+    output: true
+    permalink: /mac/:path/
+  linux:
+    output: true
+    permalink: /linux/:path/
+  windows:
+    output: true
+    permalink: /windows/:path/

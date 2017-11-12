@@ -1,0 +1,66 @@
+---
+layout: page
+title: Linux
+permalink: /linux/
+description: GNU
+image: assets/images/pic02.jpg
+video: https://www.youtube.com/embed/F_TrgC7h52s
+nav-menu: true
+images: [ "assets/images/pic06.jpg", "assets/images/pic05.png", "assets/images/pic04.jpg" ]
+---
+{% contentfor content_history %}
+<div>
+<h3>History</h3>
+<p>Linux is a name which broadly denotes a family of free and open-source software operating system distributions built around the Linux kernel.</p>
+
+<p>Many Linux distributions use the word "Linux" in their name. The Free Software Foundation uses the name GNU/Linux to refer to the operating system family, as well as specific distributions, to emphasize that most Linux distributions are not just the Linux kernel, and that they have in common not only the kernel, but also numerous utilities and libraries, a large proportion of which are from the GNU project. This has led to some controversy.</p>
+
+<p>From smartphones to cars, supercomputers and home appliances, the Linux operating system is everywhere. Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system</p>
+
+<p>The development of Linux is one of the most prominent examples of free and open-source software collaboration. The underlying source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License.</p>
+</div>
+{% endcontentfor content_history %}
+
+
+{% contentfor content_overview %}
+
+
+<div class="slide-images">
+{% for i in page.images %}
+    <img src="{{site.url}}/{{i}}" />
+{% endfor %}
+</div>
+<div>
+<h3>What is that?</h3>
+Linux is a name which broadly denotes a family of free and open-source software operating system distributions built around the Linux kernel.
+
+Many Linux distributions use the word "Linux" in their name. The Free Software Foundation uses the name GNU/Linux to refer to the operating system family, as well as specific distributions, to emphasize that most Linux distributions are not just the Linux kernel, and that they have in common not only the kernel, but also numerous utilities and libraries, a large proportion of which are from the GNU project. This has led to some controversy.
+
+From smartphones to cars, supercomputers and home appliances, the Linux operating system is everywhere. Linux was originally developed for personal computers based on the Intel x86 architecture, but has since been ported to more platforms than any other operating system
+
+The development of Linux is one of the most prominent examples of free and open-source software collaboration. The underlying source code may be used, modified and distributed—commercially or non-commercially—by anyone under the terms of its respective licenses, such as the GNU General Public License.
+
+Typically, Linux is packaged in a form known as a Linux distribution (or distro for short) for both desktop and server use. Some of the most popular and mainstream Linux distributions are Arch Linux, CentOS, Debian, Fedora, Gentoo Linux, Linux Mint, Mageia, openSUSE and Ubuntu, together with commercial distributions such as Red Hat Enterprise Linuxand SUSE Linux Enterprise Server.
+</div>
+
+
+{% endcontentfor content_overview %}
+
+
+{% contentfor content_links %}
+<div>
+    <h3>More info:</h3>
+        <ul class="alt">
+            <li>
+                <a class="button special fit" href="https://en.wikipedia.org/wiki/Linux"
+                target="_blank">https://en.wikipedia.org/wiki/Linux</a>
+            </li>
+            <li>
+                <a class="button special fit" href="https://www.getgnulinux.org/en/linux/" target="_blank">https://www.getgnulinux.org/en/linux/</a>
+            </li>
+            <li>
+                <a class="button special fit" href="https://en.wikipedia.org/wiki/GNU" target="_blank">https://en.wikipedia.org/wiki/GNU</a>
+            </li>
+        </ul>
+</div>
+{% endcontentfor content_links %}
