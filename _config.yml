@@ -40,3 +40,6 @@ collections:
   windows:
     output: true
     permalink: /windows/:path/
+
+plugins:
+  - jekyll-contentblocks
